@@ -557,7 +557,7 @@ export default function App() {
                   )}
                   <span className="position-relative">
                     {locked
-                      ? `Ładowanie… ${Math.ceil(remaining / 1000)} s`
+                      ? `Czytaj wyjaśnienia… ${Math.ceil(remaining / 1000)} s`
                       : index + 1 < rounds.length
                         ? 'Dalej →'
                         : 'Zobacz wynik 🏁'}
@@ -618,7 +618,7 @@ function StartScreen({
         <h1 className="fw-bold mb-1">{DATA.quiz.title}</h1>
         <p className="text-secondary mb-3">{DATA.quiz.level}</p>
         <div className="d-flex flex-wrap justify-content-center gap-2">
-          <span className="badge rounded-pill text-bg-primary">{QUESTIONS.length} pytania</span>
+          <span className="badge rounded-pill text-bg-primary">{QUESTIONS.length} {plural(QUESTIONS.length, 'pytanie', 'pytania', 'pytań')}</span>
           {counts.map(({ d, n }) => (
             <span key={d} className={`badge rounded-pill text-bg-${DIFF[d].color}`}>
               {DIFF[d].label}: {n}
