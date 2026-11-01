@@ -10,16 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
+    "katex": "^0.19.1",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "yaml": "^2.9.1"
   },
-  "devDependencies": { 
+  "devDependencies": {
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2", 
+    "@vitejs/plugin-react": "^6.1.2",
     "globals": "^17.13.0",
-    "typescript": "~7.0.2", 
+    "typescript": "~7.0.2",
     "vite": "^8.3.5"
   }
 }
